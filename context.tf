@@ -93,18 +93,18 @@ variable "context" {
     error_message = "Allowed values: `lower`, `title`, `upper`, `none`."
   }
 }
-
+variable "namespace" {
+  type        = string
+  default     = null
+  description = "ID element. Usually an abbreviation of your organization name, e.g. 'eg' or 'cp', to help ensure generated IDs are globally unique"
+}
 variable "enabled" {
   type        = bool
   default     = null
   description = "Set to false to prevent the module from creating any resources"
 }
 
-variable "namespace" {
-  type        = string
-  default     = null
-  description = "ID element. Usually an abbreviation of your organization name, e.g. 'eg' or 'cp', to help ensure generated IDs are globally unique"
-}
+
 
 variable "tenant" {
   type        = string

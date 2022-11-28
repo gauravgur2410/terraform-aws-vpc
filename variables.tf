@@ -143,15 +143,15 @@ variable "default_network_acl_deny_all" {
     When `false`, do not mange the default networking acl, allowing it to be managed by another component.
     EOT
 }
-
+variable "ipv6_egress_only_internet_gateway_enabled" {
+  type        = bool
+  description = "Set `true` to create an IPv6 Egress-Only Internet Gateway for the VPC"
+  default     = false
+}
 variable "internet_gateway_enabled" {
   type        = bool
   description = "Set `true` to create an Internet Gateway for the VPC"
   default     = true
 }
 
-variable "ipv6_egress_only_internet_gateway_enabled" {
-  type        = bool
-  description = "Set `true` to create an IPv6 Egress-Only Internet Gateway for the VPC"
-  default     = false
-}
+
