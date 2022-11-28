@@ -1,10 +1,4 @@
 
-
-
-[![README Header][readme_header_img]][readme_header_link]
-
--->
-
 Terraform module to provision a VPC with Internet Gateway. Contains a submodule for provisioning Interface and/or Gateway VPC Endpoints.
 This module also supports provisioning additional CIDR blocks for the VPC, with or without using [IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html).
 
